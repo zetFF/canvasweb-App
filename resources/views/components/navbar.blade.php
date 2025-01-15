@@ -3,7 +3,7 @@
         <nav id="mobile-menu">
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="{{ url('/') }}">Home</a>
                 </li>
                 <li class="hasdropdown">
                     <a href="#">Pages</a>
