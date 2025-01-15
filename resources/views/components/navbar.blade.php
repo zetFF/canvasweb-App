@@ -57,7 +57,7 @@
                                     </a>
 
                                     @if (Route::has('register'))
-                                        <a class="mt-4" href="{{ route('register') }}">
+                                        <a class="mt-3" href="{{ route('register') }}">
                                             Register
                                         </a>
                                     @endif
