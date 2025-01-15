@@ -44,27 +44,7 @@
                     <ul class="submenu">
                         <li><a href="blog.html">Blog Sidebar</a></li>
                         <li><a href="blog-details.html">Blog Details</a></li>
-                        <li>
-                            @if (Route::has('login'))
-                            <nav>
-                                @auth
-                                    <a href="{{ url('/dashboard') }}">
-                                        Dashboard
-                                    </a>
-                                @else
-                                    <a href="{{ route('login') }}">
-                                        Log in
-                                    </a>
-
-                                    @if (Route::has('register'))
-                                        <a class="mt-3" href="{{ route('register') }}">
-                                            Register
-                                        </a>
-                                    @endif
-                                @endauth
-                            </nav>
-                        @endif
-                        </li>
+                       
                     </ul>
                 </li>
             </ul>

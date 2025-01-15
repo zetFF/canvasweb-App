@@ -24,7 +24,27 @@
                                     <a href="tel:0091590088">Call us : <span>+00 91 590 088 </span></a>
                                 </div>
                                 <div class="tp-header-button d-none d-md-block">
-                                    <a class="tp-btn" href="about-us.html">Get Started</a>
+                                    <li>
+                                        @if (Route::has('login'))
+                                        <nav class="d-flex gap-3 align-items-center">
+                                            @auth
+                                                <a class="tp-btn" href="{{ url('/dashboard') }}">
+                                                    Dashboard
+                                                </a>
+                                            @else
+                                                <a class="text-white" href="{{ route('login') }}">
+                                                    Log in
+                                                </a>
+
+                                                @if (Route::has('register'))
+                                                    <a class="tp-btn" href="{{ route('register') }}">
+                                                        Register
+                                                    </a>
+                                                @endif
+                                            @endauth
+                                        </nav>
+                                    @endif
+                                    </li>
                                 </div>
                                 <div class="tp-toggle-bar d-lg-none">
                                     <a class="tp-menu-bar" href="javascript:void(0)"><i class="fas fa-bars"></i></a>
