@@ -19,8 +19,7 @@
                         <div class="col-xxl-4 col-xl-3 col-lg-2 col-md-6 col-6">
                             <div class="tp-header-right d-flex align-items-center justify-content-end">
                                 <div class="tp-header-info d-none d-xxl-block">
-                                    <a class="header-icon" href="#"><img src="assets/img/svg/header-icon.svg"
-                                            alt="" /></a>
+                                    <a class="header-icon" href="#"></a>
                                     <a href="tel:0091590088">Call us : <span>+00 91 590 088 </span></a>
                                 </div>
                                 <div class="tp-header-button d-none d-md-block">

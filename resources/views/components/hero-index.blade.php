@@ -15,8 +15,30 @@
                                 insurance <br />
                                 policy at no extracost.
                             </p>
-                            <a class="tp-btn tp-hover-white" href="about-us.html">Get Started</a>
-                            <a class="tp-btn-yellow tp-hover-white" href="contact.html">Contact us today</a>
+                            <div class="d-flex align-items-center justify-center">
+                                <li>
+                                    @if (Route::has('login'))
+                                    <nav class="d-flex gap-3 align-items-center">
+                                        @auth
+                                            <a class="tp-btn" href="{{ url('/dashboard') }}">
+                                                Dashboard
+                                            </a>
+                                        @else
+                                            <a class="text-white" href="{{ route('login') }}">
+                                                Log in
+                                            </a>
+
+                                            @if (Route::has('register'))
+                                                <a class="tp-btn" href="{{ route('register') }}">
+                                                    Register
+                                                </a>
+                                            @endif
+                                        @endauth
+                                    </nav>
+                                @endif
+                                </li>
+                                <a class="tp-btn-yellow tp-hover-white" href="contact.html">Contact us today</a>
+                               </div>
                         </div>
                     </div>
                 </div>
@@ -33,8 +55,30 @@
                                 insurance <br />
                                 policy at no extracost.
                             </p>
-                            <a class="tp-btn tp-hover-white" href="about-us.html">Get Started</a>
-                            <a class="tp-btn-yellow tp-hover-white" href="contact.html">Contact us today</a>
+                            <div class="d-flex align-items-center justify-center">
+                                <li>
+                                    @if (Route::has('login'))
+                                    <nav class="d-flex gap-3 align-items-center">
+                                        @auth
+                                            <a class="tp-btn" href="{{ url('/dashboard') }}">
+                                                Dashboard
+                                            </a>
+                                        @else
+                                            <a class="text-white" href="{{ route('login') }}">
+                                                Log in
+                                            </a>
+
+                                            @if (Route::has('register'))
+                                                <a class="tp-btn" href="{{ route('register') }}">
+                                                    Register
+                                                </a>
+                                            @endif
+                                        @endauth
+                                    </nav>
+                                @endif
+                                </li>
+                                <a class="tp-btn-yellow tp-hover-white" href="contact.html">Contact us today</a>
+                               </div>
                         </div>
                     </div>
                 </div>
@@ -51,8 +95,30 @@
                                 insurance <br />
                                 policy at no extracost.
                             </p>
-                            <a class="tp-btn tp-hover-white" href="about-us.html">Get Started</a>
+                           <div class="d-flex align-items-center justify-center">
+                            <li>
+                                @if (Route::has('login'))
+                                <nav class="d-flex gap-3 align-items-center">
+                                    @auth
+                                        <a class="tp-btn" href="{{ url('/dashboard') }}">
+                                            Dashboard
+                                        </a>
+                                    @else
+                                        <a class="text-white" href="{{ route('login') }}">
+                                            Log in
+                                        </a>
+
+                                        @if (Route::has('register'))
+                                            <a class="tp-btn" href="{{ route('register') }}">
+                                                Register
+                                            </a>
+                                        @endif
+                                    @endauth
+                                </nav>
+                            @endif
+                            </li>
                             <a class="tp-btn-yellow tp-hover-white" href="contact.html">Contact us today</a>
+                           </div>
                         </div>
                     </div>
                 </div>

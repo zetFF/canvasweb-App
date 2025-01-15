@@ -2,13 +2,8 @@
     <div>
         <nav id="mobile-menu">
             <ul>
-                <li class="hasdropdown">
+                <li>
                     <a href="index.html">Home</a>
-                    <ul class="submenu">
-                        <li><a href="{{ url('/') }}">Home 01</a></li>
-                        <li><a href="index-2.html">Home 02</a></li>
-                        <li><a href="index-3.html">Home 03</a></li>
-                    </ul>
                 </li>
                 <li class="hasdropdown">
                     <a href="#">Pages</a>
@@ -33,7 +28,7 @@
                 <li class="hasdropdown">
                     <a href="portfolio-details.html">Portfolio</a>
                     <ul class="submenu">
-                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="https://zetportolio.netlify.app" target="_self">Portfolio</a></li>
                         <li>
                             <a href="portfolio-details.html">Portfolio Details</a>
                         </li>
@@ -44,7 +39,7 @@
                     <ul class="submenu">
                         <li><a href="blog.html">Blog Sidebar</a></li>
                         <li><a href="blog-details.html">Blog Details</a></li>
-                       
+
                     </ul>
                 </li>
             </ul>
